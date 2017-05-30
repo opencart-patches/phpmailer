@@ -1,0 +1,33 @@
+{
+    "name": "opencart-patches/phpmailer",
+    "description": "Opencart Patch PHPMailer",
+    "license": "GPL-3.0",
+    "type": "opencart-extension",
+    "authors": [
+        {
+            "name": "stefanhuber",
+            "email": "stefan.huber@beyondit.at"
+        }
+    ],
+    "require-dev": {
+        "opencart/opencart" : "2.3.0.2",
+        "vlucas/phpdotenv": "~1.1.0",
+        "consolidation/robo": "~1",
+        "henrikbjorn/lurker": "^1.2"
+    },
+    "config": {
+        "bin-dir": "bin/",
+        "preferred-install": "source"
+    },
+    "extra": {
+        "src-dir" : "src/upload" ,
+        "opencart-dir" : "www" ,
+        "mappings" : [
+            "system/library/mail.php"
+        ]
+    },
+    "require": {
+        "beyondit/opencart-extension-installer": "^2.3",
+        "phpmailer/phpmailer": "^5.2"
+    }
+}
